@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">App_sem3_s1_GeoQuizwx64</string>
+    <string name="yesRequest">Yes</string>
+    <string name="noRequest">No</string>
+    <string name="nextRequest">Next</string>
+    <string name="level1Title">LEVEL 1 - EASY :)</string>
 </resources>
