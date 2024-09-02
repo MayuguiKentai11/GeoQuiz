@@ -8,12 +8,47 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvGreetings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="152dp"
+        android:text="Choose a level difficulty"
+        android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btLevel1"
+        android:layout_width="212dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="40dp"
+        android:onClick="sendMessageLevel1"
+        android:text="Level 1 - Easy"
+        android:textColorLink="#2196F3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGreetings" />
+
+    <Button
+        android:id="@+id/btLevel2"
+        android:layout_width="212dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="144dp"
+        android:onClick="sendMessageLevel2"
+        android:text="Level 2 - Intermediate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGreetings" />
+
+    <Button
+        android:id="@+id/btLevel3"
+        android:layout_width="211dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="144dp"
+        android:onClick="sendMessageLevel3"
+        android:text="Level 3 - Advanced"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btLevel1" />
 </androidx.constraintlayout.widget.ConstraintLayout>
